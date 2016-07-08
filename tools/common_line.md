@@ -79,11 +79,11 @@ CPU的核心数是指物理上，也就是硬件上存在着几颗物理cpu,指�
 **核心数**：一个核心就是一个物理线程,英特尔有个超线程技术可以把一个物理线程模拟出两个线程来用,充分发挥CPU性能，意思是一个核心可以有多个线程。
 **线程数**：线程数是一种逻辑的概念，简单地说，就是模拟出的CPU核心数。比如，可以通过一个CPU核心数模拟出2线程的CPU，也就是说，这个单核心的CPU被模拟成了一个类似双核心CPU的功能。  
   1.查看物理cpu个数  
-  `grep 'physical id' /proc/cpuinfo | sort -u | wc -l`
+  `grep 'physical id' /proc/cpuinfo | sort -u | wc -l`  
   2.查看核心数量  
-  `grep 'core id' /proc/cpuinfo | sort -u | wc -l`
-  3.查看线程数  
-  `grep 'processor' /proc/cpuinfo | sort -u | wc -l`
+  `grep 'core id' /proc/cpuinfo | sort -u | wc -l`  
+  3.查看线程数    
+  `grep 'processor' /proc/cpuinfo | sort -u | wc -l`  
 
 - 查看某个进程启动时间  `ps -eo pid,lstart  | grep  pid`  
 
