@@ -1,0 +1,17 @@
+#vim环境搭建方法
+## 第一步: 安装lua,[lua下载地址](http://www.lua.org/download.html) 
++ 安装步骤：
++ curl -R -O http://www.lua.org/ftp/lua-5.3.3.tar.gz
++ tar zxf lua-5.3.3.tar.gz
++ cd lua-5.3.3
++ make linux test
++ make install
+## 第二步: 安装vim最新版[下载地址](http://www.vim.org/download.php#unix) 
++ 安装步骤：
++ git clone https://github.com/vim/vim.git
++ cd vim/src
++ 指定lua地址和上面安装地址保持一致 ./configure --prefix=/usr --with-features=huge --enable-rubyinterp --enable-pythoninterp --enable-luainterp --with-lua-prefix=/usr/local| grep lua
++ make && make install
+## 第三步：sh ./spf13-vim.sh
++ tar -axf vim74.tar.bz2 -C ~
+## 第四步：让环境变量生效 source ~/.bashrc
