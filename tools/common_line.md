@@ -24,6 +24,33 @@
   - 查看磁盘情况 `df -h` 或者 `df -h ./`  
   - 查看目录每个文件大小 `du -sh` 或者 `du * -sh`  
 
+- 查看当前路劲挂载那个分区 `df -a path`
+
+- 搜索一个目录下所有的关键字 `grep -rn 'chenp' ./*.cc`
+
+- 查找并替换一个目录下的所有字符串 ``` sed -i "s/oldstr/newstr/g" `grep old -rl /www` ```
+
+- date命令
+  - 显示当前时间戳  `date +%s`
+  - 显示某一刻时间戳
+  ```
+  date -d '20140929 10:11:11' +%s
+  date -d '2014-09-29 10:11:11' +%s
+  date -d 20140929 +%s   //29号零点时间戳
+  ```
+  - 把日期转换成时间戳  `date -d @1411956671`
+
+
+- 服务器之间文件拷贝
+  - 从服务器上下载文件夹
+  ```bash
+  scp  -r username@servername:/path/filename
+  ```
+  - 上传本地文件到服务器
+  ```bash
+  scp -r /path/filename username@servername:/path
+  ```
+
 
 
 ## 日常使用
