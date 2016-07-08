@@ -5,6 +5,8 @@
   - [linux下vim开发环境搭建](/tools/vim74/README.md)
   - [linux命令行艺术](/tools/common_line.md)
 
+- [优秀资源汇总](/tools/free_books.md)
+
 ```
  _                  _                      
 | |__  _   _    ___| |__   ___ _ __  _ __  
