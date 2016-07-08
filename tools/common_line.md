@@ -12,8 +12,15 @@
 ## 基础
 
 ## 日常使用
+- xz文件解压
+```bash
+1、xz -d   *.tar.xz  
+2、tar -vxf  *.tar
+```
 
 ## vim命令
+- 打开文件并跳到指定行 `vim +3 main.c 或者 vim main.c +3`
+- 
 
 ## 文本处理
 
