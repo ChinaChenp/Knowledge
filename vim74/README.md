@@ -8,7 +8,10 @@
 - 第二步: [vim安装地址](http://www.vim.org/download.php#unix)  
     - git clone https://github.com/vim/vim.git
     - cd vim/src
-    - 指定lua地址和上面安装地址保持一致 ./configure --prefix=/usr --with-features=huge --enable-rubyinterp --enable-pythoninterp --enable-luainterp --with-lua-prefix=/usr/local| grep lua
+    - 指定lua地址和上面安装地址保持一致 
+    ```
+    ./configure --prefix=/usr --with-features=huge --enable-rubyinterp --enable-pythoninterp --enable-luainterp --with-lua-prefix=/usr/local| grep lua
+    ```
     - make && make install  
 - 第三步：sh ./spf13-vim.sh  
     - tar -axf vim74.tar.bz2 -C ~  
