@@ -12,7 +12,7 @@
     ```
     ./configure --prefix=/usr --with-features=huge --enable-rubyinterp --enable-pythoninterp --enable-luainterp --with-lua-prefix=/usr/local| grep lua
     ```
-    - make && make install  
+    - `make && make install`  
 - 第三步：`curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh`  
     - `tar -axf vim74.tar.bz2 -C ~`  
 - 第四步：让环境变量生效 `source ~/.bashrc ` 
