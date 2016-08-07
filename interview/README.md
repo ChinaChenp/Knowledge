@@ -1,7 +1,7 @@
 #《c++ interview汇总》
 ## 第一部分：基础知识  
 - tcp/ip分层
-  - ![Alt text](/picture/tcp_ip.jpg "Optional title")
+  - ![分几层](/picture/tcp_ip.jpg "shenmegui")
 
 ## 第二部分：网络知识  
 
