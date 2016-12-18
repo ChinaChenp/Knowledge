@@ -7,8 +7,6 @@
 
 - [免费书籍](/tools/free_books.md)
 
-- [面试题](/interview/README.md)
-
 
 ```
  _                  _                      
