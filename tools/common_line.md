@@ -50,6 +50,7 @@
   - 更新当前时间
      ntpdate time-a.nist.gov / time.windows.com / time.nist.gov
   ```
+  
 - scp服务器之间文件拷贝,夸网段无法使用
   - 从服务器上下载文件夹
   ```bash
