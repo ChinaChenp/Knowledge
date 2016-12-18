@@ -39,7 +39,8 @@
   date -d 20140929 +%s   //29号零点时间戳
   ```
   - 把日期转换成时间戳  `date -d @1411956671`
-  - 设置时间
+  
+  - 设置时间
   ```
   - 只修改日期，没填时间默认'00:00:00'
     date -s '20161218' / date -s '2016-12-19'
@@ -50,8 +51,7 @@
   - 更新当前时间
      ntpdate time-a.nist.gov / time.windows.com / time.nist.gov
   ```
-  
-- scp服务器之间文件拷贝,夸网段无法使用
+ - scp服务器之间文件拷贝,夸网段无法使用
   - 从服务器上下载文件夹
   ```bash
   scp  -r username@servername:/path/filename
@@ -75,7 +75,6 @@
 1、xz -d   *.tar.xz  
 2、tar -vxf  *.tar
 ```
-- 
 
 ## vim命令    
 - 打开文件并跳到指定行 `vim +3 main.c 或者 vim main.c +3`  
