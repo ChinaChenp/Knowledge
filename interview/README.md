@@ -1,9 +1,9 @@
 #《c++ interview汇总》
 ## 第一部分：基础知识
-- [1.1 迭代器失效](interview/data/1.1.md)
+- [1.1 迭代器失效](data/1.1.md)
 
 ## 第二部分：网络知识
-- [2.1 tcp/ip分层](/interview/data/2.1.md)
+- [2.1 tcp/ip分层](data/2.1.md)
 
 ## 第三部分：操作系统
 
