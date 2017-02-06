@@ -16,4 +16,5 @@
 - 第三步：`curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh`  
     - `tar -axf vim74.tar.bz2 -C ~` 
     - `mv .vimrc .spf13-vim-3/.vimrc` 替换现有的vimrc
+    - `ln -s /home/chenping/.spf13-vim-3/.vimrc .vimrc` 重新生成软连接
 - 第四步：让环境变量生效 `source ~/.bashrc ` 
