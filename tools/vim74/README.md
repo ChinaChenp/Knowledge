@@ -17,4 +17,8 @@
     - `tar -axf vim74.tar.bz2 -C ~` 
     - `mv .vimrc .spf13-vim-3/.vimrc` 替换现有的vimrc  
     - `ln -s /home/chenping/.spf13-vim-3/.vimrc .vimrc` 重新生成软连接
-- 第四步：让环境变量生效 `source ~/.bashrc ` 
+- 第四步：让环境变量生效 `source ~/.bashrc `  
+- 第五步：高亮函数
+    - mkdir -p ~/.vim/after/syntax
+    - cp cpp.vim c.vim ~/.vim/after/syntax
+    - 下载地址：[cpp.vim](https://github.com/ChinaChenp/Knowledge/tree/master/tools/vim74/cpp.vim)、[c.vim](https://github.com/ChinaChenp/Knowledge/tree/master/tools/vim74/c.vim)
