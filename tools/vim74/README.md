@@ -1,6 +1,6 @@
 #vim环境搭建方法
 - 第一步: [lua安装地址](http://www.lua.org/download.html) 
-    - `curl -R -O http://www.lua.org/ftp/lua-5.3.3.tar.gz ` 
+    - `curl -R -O http://www.lua.org/ftp/lua-5.3.4.tar.gz ` 
     - `tar zxf lua-5.3.3.tar.gz  `
     - `cd lua-5.3.3  `
     - `make linux test`
