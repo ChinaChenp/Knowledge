@@ -20,5 +20,5 @@
 - 第四步：让环境变量生效 `source ~/.bashrc `  
 - 第五步：高亮函数
     - mkdir -p ~/.vim/after/syntax  
-    - cp cpp.vim c.vim ~/.vim/after/syntax 
-    - 下载地址：[cpp.vim](https://github.com/ChinaChenp/Knowledge/tree/master/tools/vim74/cpp.vim)、[c.vim](https://github.com/ChinaChenp/Knowledge/tree/master/tools/vim74/c.vim)
+    - cp cpp.vim c.vim ~/.vim/after/syntax
+    - 下载地址：[cpp.vim](https://github.com/ChinaChenp/Knowledge/tree/master/tools/vim74/cpp.vim)、[c.vim](https://github.com/ChinaChenp/Knowledge/tree/master/tools/vim74/c.vim)
