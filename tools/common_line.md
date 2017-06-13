@@ -6,7 +6,7 @@
 - [vim命令](#vim命令)
 - [文本处理](#文本处理)
 - [系统调试](#系统调试)
-- [单行脚本](#单行脚本)
+- [常用脚本](#常用脚本)
 
 
 ## 基础  
@@ -98,5 +98,27 @@ CPU的核心数是指物理上，也就是硬件上存在着几颗物理cpu,指�
 
 - `cat query_result.txt  |  sort -k2,2 -k1,1n `  先按第二列排序，在按照第一列数字排序
 
-## 单行脚本
-
+## 常用脚本 
+- 逐行读取文件
+  - 方法1
+    ``` 
+    while read line
+    do
+    echo $line
+    done < $1
+    ```
+  - 方案2
+    ```
+    for line in `cat $1`
+    do
+    echo $line
+    done
+    ```
+  - 方案3
+    ``` 
+    cat $1| while read line
+    do
+    echo $line
+    done
+    ```
+  
