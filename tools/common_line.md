@@ -128,15 +128,17 @@
     echo $line
     done
     ```
-- **alias重命名scp**
-	- 脚本 
-  ```
+- **alias重命名scp** 
+  - 脚本 
+  
+  ```
   alias chenp='__cp() {sshpass -p "password" scp -r $1 root@10.94.97.201:$2; echo scp -r $1 root@10.94.201:$2};__cp'
   ``` 
-  
   - 这样使用：chenp /home/ /home/chenp
 
 - **查找并替换一个目录下的所有字符串** 
-	``` sed -i "s/oldstr/newstr/g" `grep old -rl /www` ```
+	``` 
+	sed -i "s/oldstr/newstr/g" `grep old -rl /www` 
+	```
 	
   
