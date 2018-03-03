@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/chenp/DiDi/work/learncode/cpp/fun.cpp
+func.h
+/Users/chenp/DiDi/work/learncode/cpp/func.h
+
+/Users/chenp/DiDi/work/learncode/cpp/func.h
+
+/Users/chenp/DiDi/work/learncode/cpp/main.cpp
+iostream
+-
+func.h
+/Users/chenp/DiDi/work/learncode/cpp/func.h
+
