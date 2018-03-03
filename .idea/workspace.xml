@@ -12,60 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68cae7c6-c2f9-4741-8232-c74cc137b8be" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/interview/src/001.c" afterPath="$PROJECT_DIR$/interview/cpp/001.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/002.c" afterPath="$PROJECT_DIR$/interview/cpp/002.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/003.c" afterPath="$PROJECT_DIR$/interview/cpp/003.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/004.c" afterPath="$PROJECT_DIR$/interview/cpp/004.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/005.c" afterPath="$PROJECT_DIR$/interview/cpp/005.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/006.c" afterPath="$PROJECT_DIR$/interview/cpp/006.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/007.c" afterPath="$PROJECT_DIR$/interview/cpp/007.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/008.c" afterPath="$PROJECT_DIR$/interview/cpp/008.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/009.c" afterPath="$PROJECT_DIR$/interview/cpp/009.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/010.c" afterPath="$PROJECT_DIR$/interview/cpp/010.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/011.c" afterPath="$PROJECT_DIR$/interview/cpp/011.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/012.c" afterPath="$PROJECT_DIR$/interview/cpp/012.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/013.c" afterPath="$PROJECT_DIR$/interview/cpp/013.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/014.c" afterPath="$PROJECT_DIR$/interview/cpp/014.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/015.c" afterPath="$PROJECT_DIR$/interview/cpp/015.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/016.c" afterPath="$PROJECT_DIR$/interview/cpp/016.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/017.c" afterPath="$PROJECT_DIR$/interview/cpp/017.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/018.c" afterPath="$PROJECT_DIR$/interview/cpp/018.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/019.c" afterPath="$PROJECT_DIR$/interview/cpp/019.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/020.c" afterPath="$PROJECT_DIR$/interview/cpp/020.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/021.c" afterPath="$PROJECT_DIR$/interview/cpp/021.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/022.c" afterPath="$PROJECT_DIR$/interview/cpp/022.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/023.c" afterPath="$PROJECT_DIR$/interview/cpp/023.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/024.c" afterPath="$PROJECT_DIR$/interview/cpp/024.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/025.c" afterPath="$PROJECT_DIR$/interview/cpp/025.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/026.c" afterPath="$PROJECT_DIR$/interview/cpp/026.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/027.c" afterPath="$PROJECT_DIR$/interview/cpp/027.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/028.c" afterPath="$PROJECT_DIR$/interview/cpp/028.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/029.c" afterPath="$PROJECT_DIR$/interview/cpp/029.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/030.c" afterPath="$PROJECT_DIR$/interview/cpp/030.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/031.c" afterPath="$PROJECT_DIR$/interview/cpp/031.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/032.c" afterPath="$PROJECT_DIR$/interview/cpp/032.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/033.c" afterPath="$PROJECT_DIR$/interview/cpp/033.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/034.c" afterPath="$PROJECT_DIR$/interview/cpp/034.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/035.c" afterPath="$PROJECT_DIR$/interview/cpp/035.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/036.cpp" afterPath="$PROJECT_DIR$/interview/cpp/036.cpp" />
-      <change beforePath="$PROJECT_DIR$/interview/src/037.c" afterPath="$PROJECT_DIR$/interview/cpp/037.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/038.c" afterPath="$PROJECT_DIR$/interview/cpp/038.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/039.c" afterPath="$PROJECT_DIR$/interview/cpp/039.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/040.c" afterPath="$PROJECT_DIR$/interview/cpp/040.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/041.c" afterPath="$PROJECT_DIR$/interview/cpp/041.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/042.c" afterPath="$PROJECT_DIR$/interview/cpp/042.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/043.c" afterPath="$PROJECT_DIR$/interview/cpp/043.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/044.cpp" afterPath="$PROJECT_DIR$/interview/cpp/044.cpp" />
-      <change beforePath="$PROJECT_DIR$/interview/src/045.c" afterPath="$PROJECT_DIR$/interview/cpp/045.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/046.cpp" afterPath="$PROJECT_DIR$/interview/cpp/046.cpp" />
-      <change beforePath="$PROJECT_DIR$/interview/src/047.cpp" afterPath="$PROJECT_DIR$/interview/cpp/047.cpp" />
-      <change beforePath="$PROJECT_DIR$/interview/src/048.cpp" afterPath="$PROJECT_DIR$/interview/cpp/048.cpp" />
-      <change beforePath="$PROJECT_DIR$/interview/src/049.cpp" afterPath="$PROJECT_DIR$/interview/cpp/049.cpp" />
-      <change beforePath="$PROJECT_DIR$/interview/src/050.cpp" afterPath="$PROJECT_DIR$/interview/cpp/050.cpp" />
-      <change beforePath="$PROJECT_DIR$/interview/src/051.cpp" afterPath="$PROJECT_DIR$/interview/cpp/051.cpp" />
-      <change beforePath="$PROJECT_DIR$/interview/src/052.c" afterPath="$PROJECT_DIR$/interview/cpp/052.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/053.c" afterPath="$PROJECT_DIR$/interview/cpp/053.c" />
-      <change beforePath="$PROJECT_DIR$/interview/src/054.c" afterPath="$PROJECT_DIR$/interview/cpp/054.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/interview/bian_cheng_zhi_mei/3.10.cpp" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,10 +25,30 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="3.10.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/interview/bian_cheng_zhi_mei/3.10.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/interview/bian_cheng_zhi_mei/3.10.cpp" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -124,7 +92,7 @@
               <item name="Knowledge" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="Knowledge" type="462c0819:PsiDirectoryNode" />
               <item name="interview" type="462c0819:PsiDirectoryNode" />
-              <item name="jian_zhi_off" type="462c0819:PsiDirectoryNode" />
+              <item name="bian_cheng_zhi_mei" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -174,16 +142,18 @@
       <updated>1516422113664</updated>
       <workItem from="1516422116684" duration="13000" />
       <workItem from="1516422227796" duration="24000" />
+      <workItem from="1519182453004" duration="585000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37000" />
+    <option name="totallyTimeSpent" value="622000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -221,7 +191,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -229,11 +199,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interview/jian_zhi_off/01.cpp">
+    <entry file="file://$PROJECT_DIR$/main.cpp" />
+    <entry file="file://$PROJECT_DIR$/interview/jian_zhi_off/01.cpp" />
+    <entry file="file://$PROJECT_DIR$/interview/bian_cheng_zhi_mei/3.10.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="64">
+          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

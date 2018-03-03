@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Knowledge"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/chenp/DiDi/github/Knowledge/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/local/bin/gmake -j4 -f &quot;/Users/chenp/DiDi/github/Knowledge/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/local/bin/gmake -j4 -f &quot;/Users/chenp/DiDi/github/Knowledge/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/local/bin/gmake -j4 -f &quot;/Users/chenp/DiDi/github/Knowledge/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/local/bin/gmake -j4 -f &quot;/Users/chenp/DiDi/github/Knowledge/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/chenp/DiDi/github/Knowledge/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/local/bin/gmake -j4 -f &quot;/Users/chenp/DiDi/github/Knowledge/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/local/bin/gmake -j4 -f &quot;/Users/chenp/DiDi/github/Knowledge/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/local/bin/gmake -j4 -f &quot;/Users/chenp/DiDi/github/Knowledge/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/local/bin/gmake -j4 -f &quot;/Users/chenp/DiDi/github/Knowledge/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/chenp/DiDi/github/Knowledge/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/local/bin/gmake -j4 -f &quot;/Users/chenp/DiDi/github/Knowledge/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/local/bin/gmake -j4 -f &quot;/Users/chenp/DiDi/github/Knowledge/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/local/bin/gmake -j4 -f &quot;/Users/chenp/DiDi/github/Knowledge/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/local/bin/gmake -j4 -f &quot;/Users/chenp/DiDi/github/Knowledge/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Knowledge">
+				<Option output="/Users/chenp/DiDi/github/Knowledge/cmake-build-debug/Knowledge" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chenp/DiDi/github/Knowledge/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/local/bin/gmake -j4 -f &quot;/Users/chenp/DiDi/github/Knowledge/cmake-build-debug/Makefile&quot;  VERBOSE=1 Knowledge"/>
+					<CompileFile command="/usr/local/bin/gmake -j4 -f &quot;/Users/chenp/DiDi/github/Knowledge/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/local/bin/gmake -j4 -f &quot;/Users/chenp/DiDi/github/Knowledge/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/local/bin/gmake -j4 -f &quot;/Users/chenp/DiDi/github/Knowledge/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Knowledge/fast">
+				<Option output="/Users/chenp/DiDi/github/Knowledge/cmake-build-debug/Knowledge" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chenp/DiDi/github/Knowledge/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/local/bin/gmake -j4 -f &quot;/Users/chenp/DiDi/github/Knowledge/cmake-build-debug/Makefile&quot;  VERBOSE=1 Knowledge/fast"/>
+					<CompileFile command="/usr/local/bin/gmake -j4 -f &quot;/Users/chenp/DiDi/github/Knowledge/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/local/bin/gmake -j4 -f &quot;/Users/chenp/DiDi/github/Knowledge/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/local/bin/gmake -j4 -f &quot;/Users/chenp/DiDi/github/Knowledge/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/README.md">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/001.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/002.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/003.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/004.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/005.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/006.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/007.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/008.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/009.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/010.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/011.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/012.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/013.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/014.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/015.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/016.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/017.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/018.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/019.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/020.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/021.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/022.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/023.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/024.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/025.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/026.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/027.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/028.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/029.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/030.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/031.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/032.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/033.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/034.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/035.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/036.cpp">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/037.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/038.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/039.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/040.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/041.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/042.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/043.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/044.cpp">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/045.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/046.cpp">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/047.cpp">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/048.cpp">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/049.cpp">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/050.cpp">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/051.cpp">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/052.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/053.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/cpp/054.c">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/data/1.1.md">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/data/1.2.md">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/data/1.3.md">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/interview/data/2.1.md">
+			<Option target="Knowledge"/>
+		</Unit>
+		<Unit filename="/Users/chenp/DiDi/github/Knowledge/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
