@@ -84,6 +84,8 @@
 
 - **gstack/pstack**
 	- 导出线某个进程堆栈信息 `gstack pid > gstack.log` 或者 `pstack pid > pstack.log`
+- **curl**
+	- curl查看各个阶段时间 `curl -o /dev/test -s -w %{time_namelookup}::%{time_connect}::%{time_starttransfer}::%{time_total}::%{speed_download}"\n" internal-pbinrouter-1264384812.sa-east-1.elb.amazonaws.com:8000/passport/login/v5/syscToken --data q='{}'`
 
 ## 常用脚本 
 - **查看cpu信息**
