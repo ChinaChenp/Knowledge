@@ -85,8 +85,24 @@ func main() {
 	map4["chenping"] = "chongqing"
 	map4["age"] = "28"
 
-	ad := map4["chenping"].(string)
-	age := map4["age1"].(string)
+	//ad := map4["chenping"].(string)
+	//age := map4["age1"].(string)
 
-	fmt.Println(ad, age)
+	//fmt.Println(ad, age)
+
+	// map sort
+	var mp2 = map[int]string {
+		1:"11",
+		2:"22",
+		8:"88",
+		5:"55",
+		3:"11",
+		4:"22",
+		11:"111",
+		9:"99",
+		6:"66",
+	}
+	for k, v := range mp2 {
+		fmt.Println(k, v)
+	}
 }

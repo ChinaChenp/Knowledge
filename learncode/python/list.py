@@ -58,3 +58,25 @@ print(re)
 
 # motorcycles = ['honda', 'yamaha', 'suzuki'] 
 # print(motorcycles[3])
+
+#相加
+l1 = [1, 2, 3, 4, 5, "chenp"]
+l2 = [11, 34, "ping"]
+l3 = l1 + l2
+print(l3)
+
+#乘法
+l1 = [45] * 10
+print(l1)
+
+#判断
+if "chenp" in l1:
+    print("chenp in ok")
+else:
+    print("chenp not in")
+
+#插入
+numbers = [1, 5]
+print(numbers)
+numbers[1:1] = [1, 2, 3, 4]
+print(numbers)
