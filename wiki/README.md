@@ -1,11 +1,21 @@
-# 《万能宝典》
-> 个人知识点整理、汇总
+# 《个人wiki》
+- 推荐 & 搜索
+  - 通用架构图
+  - 依赖组件
+    - es构建
+    - 
+    
 
-- 开发工具
-  - [linux下vim开发环境搭建](/tools/vim74/README.md)
-  - [linux命令行艺术](/tools/common_line.md)
-
-- [免费书籍](/tools/free_books.md)
+- 基础架构
+  - nginx
+  - redis
+  - ice
+  - odin
+  - baimai
+  - lbs
+- 优质资源
+  - 链接
+  > 思考
 
 
 ```
