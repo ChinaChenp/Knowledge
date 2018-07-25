@@ -12,6 +12,7 @@
   - lbs
     - geohash
     - mmap
+    - epoll 文件fd
   
 - **工程化 & 稳定性**
   - 熔断
