@@ -9,6 +9,10 @@
   - rank
   - rerank
   - fc
+  - lbs
+    - geohash
+    - mmap
+  
 - **工程化 & 稳定性**
   - 熔断
   - 降级
