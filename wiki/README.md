@@ -41,6 +41,7 @@
   - mq 
   - mysql
   - leveldb
+  - zookeeper
   
 - **踩坑 & 经验**
   - 2018.4.35
