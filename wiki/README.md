@@ -13,6 +13,10 @@
     - geohash
     - mmap
     - epoll 文件fd
+- 基础知识 & 普及
+  - base64、base32
+  - url encode & decode
+  - 
   
 - **工程化 & 稳定性**
   - 熔断
