@@ -39,6 +39,9 @@
 - **基础架构**
   - nginx
   - redis
+    - 如何搭建集群
+    - 如何容错、宕机
+    - 如何迁移
   - ice
   - odin
   - baimai
