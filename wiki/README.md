@@ -1,12 +1,64 @@
-# 《万能宝典》
-> 个人知识点整理、汇总
+## **《chenp wiki》**
+> 记录知识点核心原理、适用场景、源码、各种利弊、各种坑等
 
-- 开发工具
-  - [linux下vim开发环境搭建](/tools/vim74/README.md)
-  - [linux命令行艺术](/tools/common_line.md)
+- **推荐 & 搜索 & 广告**
+  - 整体架构
+  - 常见名词
+  - broker
+  - es
+  - recall
+  - rank
+  - rerank
+  - fc
+  - lbs
+    - geohash
+    - mmap
+    - epoll 文件fd
+  - ip定位
+  
+- 基础知识 & 普及
+  - base64、base32
+  - url encode & decode
+  - yaml & toml 
+  
+- **工程化 & 稳定性**
+  - 熔断
+  - 降级
+  - 限流
+  - 监控
+  - 报警
+  - 大盘
+  - 异地多活
+- **流程 & 能效**
+  - 上线流程
+  - 值班
+  - 工具化
+  - 测试流程
+  - 研发过程
 
-- [免费书籍](/tools/free_books.md)
+- **基础架构**
+  - nginx
+  - redis
+    - 如何搭建集群
+    - 如何容错、宕机
+    - 如何迁移
+  - ice
+  - odin
+  - baimai
+  - lbs
+  - hive
+  - MapReduce
+  - mq 
+  - mysql
+  - leveldb
+  - zookeeper
+  
+- **踩坑 & 经验**
+  - 2018.4.35
 
+- **思考 & 阅读**
+  - 链接
+  > 思考
 
 ```
  _                  _                      
