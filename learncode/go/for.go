@@ -17,4 +17,13 @@ func main() {
 	for _, v := range str {
 		fmt.Println(&v, v)
 	}
+
+	l := []int64{4, 3, 5, 6, 0, 1, 9}
+	for k := range l {
+		fmt.Println(k)
+	}
+
+	for i, k := range l {
+		fmt.Printf("%v, %v\n", i, k)
+	}
 }

@@ -5,24 +5,33 @@ import (
 	"fmt"
 )
 
-type Message struct {
+type EncodeMessage struct {
 	MsgId   string `json:"msg_id"`
 	Content string `json:"content"`
+	Age     int    `json:"age"`
 }
 
-type Message1 struct {
-	MsgId   string `json:"msg_id"`
-	Content string `json:"content"`
-	Age     string `json:"age"`
+type DecodeMessage struct {
+	MsgId   string  `json:"msg_id"`
+	Content string  `json:"content"`
+	Age     *int    `json:"age"`
+	Name    *string `json:"name"`
 }
 
-//json 序列号反序列化
 func main() {
-	msg := Message{"msgid_001", "contente2222222222"}
-	str, err := json.Marshal(msg)
+	var age int = 35
+	encode := EncodeMessage{"01", "test", age}
+	str, err := json.Marshal(encode)
 	fmt.Println(string(str), err)
 
-	var msg1 Message1
-	err = json.Unmarshal(str, &msg1)
-	fmt.Println(msg1)
+	var decode DecodeMessage
+	err = json.Unmarshal(str, &decode)
+	fmt.Println(decode)
+	if decode.Age != nil {
+		fmt.Println(*decode.Age)
+	}
+
+	if decode.Name != nil {
+		fmt.Println(*decode.Name)
+	}
 }

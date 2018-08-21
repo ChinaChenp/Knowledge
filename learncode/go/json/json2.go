@@ -20,6 +20,7 @@ func main() {
 		}
 	}
 	fuck := &Result{}
+	fuck.Errno = 1
 	if err := json.Unmarshal([]byte(str), fuck); err != nil {
 		fmt.Printf("unmarshal result failed, err:%v", err)
 		return
