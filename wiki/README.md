@@ -45,6 +45,7 @@
   - mq 
   - mysql
   - leveldb
+  - lru & lfu
   - zookeeper
   
 ## 第三部分：工程化 & 稳定性
