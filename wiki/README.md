@@ -34,7 +34,7 @@
   - thrift
     - 相比其他http、ip直连优势
   - redis
-    - 高可用搭建集群
+    - [高可用搭建集群](https://mp.weixin.qq.com/s/Z-PyNgiqYrm0ZYg0r6MVeQ)
     - 如何容错、宕机
     - 如何迁移
   - ice
