@@ -57,6 +57,7 @@
   
 ## 第三部分：工程化 & 稳定性
   - 第一章：稳定性
+    - [全局意识](http://naotu.baidu.com/file/bb3cefe050e5e894c2dfaa699267aae7)
     - 熔断
     - 降级
     - 限流
