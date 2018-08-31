@@ -45,6 +45,7 @@
   - mq 
   - mysql
     - 高可用集群方案
+    - binlog
   - leveldb
   - lru & lfu
   - zookeeper
