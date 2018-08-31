@@ -43,6 +43,8 @@
   - hive
   - MapReduce
   - mq 
+    - 高可用
+    - 消费积压怎么做
   - mysql
     - 高可用集群方案
     - binlog
