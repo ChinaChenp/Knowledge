@@ -17,5 +17,8 @@ int main() {
     std::cout << *save << std::endl;
     std::cout << **save << std::endl;
 
+    std::string str = "chenping";
+    str.append("yes");
+    std::cout << str << std::endl;
     return 0;
 }
