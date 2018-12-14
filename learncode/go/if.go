@@ -29,7 +29,7 @@ func main() {
 	fmt.Println(a)
 
 	info := testInfo{
-		A : 3 > 2,
+		A: 3 > 2,
 	}
 
 	fmt.Println(info.A)

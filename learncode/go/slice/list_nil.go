@@ -29,4 +29,18 @@ func main ()  {
 	if len(ll2) == 0 {
 		fmt.Println("ll2 len 0")
 	}
+
+	s1 := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+	s2 := make([]int, 20)
+	for i, v := range s1 {
+		s2[i] = v
+	}
+
+	fmt.Println(s2, len(s2), cap(s2))
+
+	s3 := make([]int, 0)
+	s4 := s3[:0]
+	fmt.Println(s3, s4)
+
+	fmt.Println(s1[:2])
 }

@@ -5,6 +5,31 @@ import (
 	"time"
 )
 
+const TIME_LAYOUT = "2006-01-02 15:04:05"
+
+func parseWithLocation(name string) (time.Time, error) {
+	locationName := name
+	l, err := time.LoadLocation(locationName);
+	if err != nil {
+		println(err.Error())
+		return time.Time{}, err
+	}
+
+	now := time.Now()
+	//fmt.Println(now.Format(StringTimeFormat))
+
+	lt, _ := time.ParseInLocation(StringTimeFormat, now.Format(StringTimeFormat), l)
+	fmt.Println("---->", locationName, lt)
+	zoneK, zoneV := lt.Zone()
+	fmt.Println("====>", zoneK, zoneV, lt.Unix())
+
+	t := now.In(l)
+	zoneK, zoneV = t.Zone()
+	fmt.Println("now===>", t.Unix(), zoneK, zoneV)
+
+	return lt, nil
+}
+
 var gCountryId = map[string]string{
 	"Hungary":     "Europe/Budapest",
 	"Egypt":       "Africa/Cairo",
@@ -47,9 +72,13 @@ func main() {
 	y, w := t.ISOWeek()
 	fmt.Println(t.Weekday(), y, w)
 
+	parseWithLocation("America/Mexico_City")
+	parseWithLocation("America/Cordoba")
+	parseWithLocation("Asia/Shanghai")
+	parseWithLocation("Asia/Chongqing")
 
-	str := "2018-05-05 05:05:05"
-	locale := "Asia/Chongqing"
-	t1, _ := ConvertTimeString2Timestamp(str, locale)
-	fmt.Println(t1)
+	//str := "2018-05-05 05:05:05"
+	//locale := "Asia/Chongqing"
+	//t1, _ := ConvertTimeString2Timestamp(str, locale)
+	//fmt.Println(t1)
 }

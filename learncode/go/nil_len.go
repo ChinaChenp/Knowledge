@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func do()(str []byte, err error) {
+func do() (str []byte, err error) {
 	if false {
 		return str, nil
 	}

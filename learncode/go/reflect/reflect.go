@@ -20,7 +20,7 @@ func convert(from, to interface{}) {
 func main() {
 	var (
 		a int64 = 5
-		b int = 6
+		b int   = 6
 	)
 
 	convert(&a, &b)

@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	str := "12345_3248ff"
@@ -14,5 +16,8 @@ func main() {
 		fmt.Println(err.Error())
 	}
 	fmt.Println(a, b, n)
-}
 
+	bo := true
+	re := fmt.Sprintf("%d", int(bo))
+	fmt.Println(re)
+}

@@ -16,7 +16,7 @@ func convert(a *int) *int64 {
 	return (*int64)(unsafe.Pointer(a))
 }
 
-func main()  {
+func main() {
 	var A DeliverType
 	fmt.Println(A)
 
