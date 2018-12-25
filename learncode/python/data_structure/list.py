@@ -80,3 +80,8 @@ numbers = [1, 5]
 print(numbers)
 numbers[1:1] = [1, 2, 3, 4]
 print(numbers)
+
+#列表推导式
+vec = [1, 2, 3]
+re = [3*x for x in vec]
+print(re)
