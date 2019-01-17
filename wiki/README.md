@@ -86,7 +86,7 @@
   - git
   - mysql
   - vim
-  - shell
+  - [shell](docs/section5/1.4.md)
   
 ## 第六部分：基本功
   - 第一章：语言
