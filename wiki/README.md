@@ -86,14 +86,17 @@
   - git
   - mysql
   - vim
+  - shell
   
 ## 第六部分：基本功
-  - 语言
-    - [Go](docs/section6/1.1.md)
-    - [C++](docs/section6/1.2.md)
-  - 算法
-  - 操作系统
-  - 网络
+  - 第一章：语言
+    - 1.1 [Go](docs/section6/1.1.md)
+    - 1.2 [C++](docs/section6/1.2.md)
+  - 第二章：算法
+  - 第三章：操作系统
+  - 第四章：网络
+  - 第五章：方案设计
+    - 5.1 [id生成器](docs/section6/5.1.md)
   
 ## 第七部分：经验 & 入坑
   - 2018.4.35
