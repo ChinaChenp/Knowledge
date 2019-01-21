@@ -59,9 +59,9 @@
 ## 第三部分：工程化 & 稳定性
   - 第一章：稳定性
     - 1.1 [全局意识](http://naotu.baidu.com/file/bb3cefe050e5e894c2dfaa699267aae7)
-    - 1.2 熔断
-    - 1.3 降级
-    - 1.4 限流
+    - 1.2 [熔断](docs/section3/1.2.md)
+    - 1.3 [降级](docs/section3/1.3.md)
+    - 1.4 [限流](docs/section3/1.4.md)
     - 1.5 监控
     - 1.6 报警
     - 1.7 大盘
