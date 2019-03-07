@@ -8,7 +8,7 @@ class Node:
 def list_reverse(head):
     if head is None or head.next is None:
         return head
-    p, q = head, head.next
+    p, q = head, head.next #保存头指针节点
 
     head.next = None
     while q :

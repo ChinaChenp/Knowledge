@@ -84,6 +84,7 @@ func main() {
 	map4 := make(map[string]interface{})
 	map4["chenping"] = "chongqing"
 	map4["age"] = "28"
+	fmt.Printf("map not exist %v\n", map4["chenping1"])
 
 	//ad := map4["chenping"].(string)
 	//age := map4["age1"].(string)
