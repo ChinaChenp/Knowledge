@@ -96,7 +96,7 @@
   - 第二章：算法
   - 第三章：操作系统
   - 第四章：网络
-    - 1.1 [select/epoll](docs/setion6/4.1.md)
+    - 4.1 [select/epoll](docs/section6/4.1.md)
   - 第五章：方案设计
     - 5.1 [id生成器](docs/section6/5.1.md)
   
