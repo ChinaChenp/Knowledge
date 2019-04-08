@@ -22,12 +22,12 @@ def FindOneNumber(arr):
             if v == candidate:
                 times += 1
             else:
-                times = 0
+                times -= 1
     return candidate
 
 arr = [0, 1, 2, 1, 1]
 print(FindOneNumber(arr))
-arr = [0, 1, 2, 1, 1, 2, 1, 2, 3, 2, 2]
+arr = [0, 1, 2, 1, 1, 2, 1, 2, 3, 2, 2, 3, 2, 2]
 print(FindOneNumber(arr))
-arr = [0, 1, 2, 1, 1, 3, 3, 3, 3]
+arr = [0, 1, 3, 2, 1, 1, 3, 3, 3, 3]
 print(FindOneNumber(arr))

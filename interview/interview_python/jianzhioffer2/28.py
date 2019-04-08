@@ -16,7 +16,7 @@ def isSymmetricInner(t1, t2):
     if t1.value != t2.value:
         return False
         
-    left = isSymmetricInner(t1.left, t2.right)
+    left = isSymmetricInner(t1.left, t2.right) # 注意这里，对称和镜像不同之处
     right = isSymmetricInner(t1.right, t2.left)
     return left and right
 

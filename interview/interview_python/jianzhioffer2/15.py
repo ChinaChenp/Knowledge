@@ -5,7 +5,7 @@ def NumberOf1(n):
     count, bit = 0, 1
     while bit:
         if n & bit:
-            count = count + 1
+            count += 1
         bit = bit << 2
 
         #python 跟其他语言不一样不会溢出 默认是int64

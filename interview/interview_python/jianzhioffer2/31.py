@@ -19,12 +19,13 @@ def IsPopOrder(input, out):
             stack.append(input[in_index])
             in_index += 1
 
-         # 查看栈顶是否和出栈值相等
+        # 结束的时候有两种情况 1）输入队列入栈完毕 2）栈顶和输出队列相同
+        # 查看栈顶是否和出栈值相等
         if stack[-1] == out[out_index]:
              re = stack.pop()
              print('re', re)
              out_index += 1
-        else:
+        else: #栈顶和输入队列不同 / 入栈完毕 
             return False
     return True
 

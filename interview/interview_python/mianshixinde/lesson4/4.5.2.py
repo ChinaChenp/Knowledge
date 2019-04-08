@@ -1,5 +1,6 @@
 #旋转数组查找默认升序
 
+# 思路：旋转数组取中间位置至少有一边是有序的，利用有序快速判断key在那一边
 def Search(arr, key):
     if len(arr) == 0:
         return -1
@@ -13,13 +14,13 @@ def Search(arr, key):
             return cur
         #默认升序，左边有序
         if cur > arr[beg]:
-            if cur > key and key >= arr[beg]: #确实在左边区间
+            if cur > key and key >= arr[beg]: #确实key在左边区间
                 end = mid - 1
             else:
                 beg = mid + 1
         #右边有序
         if cur < arr[end]:
-            if cur < key and key <= arr[end]: #确实在右边区间
+            if cur < key and key <= arr[end]: #确实key在右边区间
                 beg = mid + 1
             else:
                 end = mid - 1

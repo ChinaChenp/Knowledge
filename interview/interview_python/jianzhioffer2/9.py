@@ -14,12 +14,13 @@ class Queue:
         if self.max_size1 == len(self.stack1):
             return False
         self.stack1.append(v)
+        return True
     def pop(self):
         if len(self.stack2) != 0:
             return self.stack2.pop()
         if len(self.stack1) == 0:
             return None
-
+        
         while len(self.stack1):
             v = self.stack1.pop()
             self.stack2.append(v)

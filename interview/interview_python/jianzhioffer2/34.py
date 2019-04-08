@@ -1,4 +1,5 @@
 # 二叉树中和为某一值的路径
+# 路劲定义：从根节点到叶子节点的和
 
 from binarytree import tree, Node
 
@@ -17,8 +18,7 @@ def FindAllPath(t, need_sum, cur_sum, path):
     cur_sum += t.value
 
     # 查看是否只叶子节点并且累加和等于目标sum
-    isLeaf = (t.left == None and t.right == None)
-    if isLeaf and cur_sum == need_sum:
+    if t.left == None and t.right == None and cur_sum == need_sum:
         #打印路劲
         for v in path:
             print(v, end=', ')

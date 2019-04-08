@@ -20,7 +20,7 @@ def InViewNextNode(t, key):
     # 向上查找第一个父节点的左节点
     elif t.parent != None:
         cur, parent_node = t, t.parent 
-        while parent_node != None and parent_node != t:
+        while parent_node != None and parent_node.right != t:
             cur = parent_node
             parent_node = parent_node.next
         next_node = parent_node

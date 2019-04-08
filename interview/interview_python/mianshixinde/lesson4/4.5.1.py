@@ -16,16 +16,16 @@ def getLessIndex(arr):
     #考虑边界左右两边情况
     if len(arr) == 1:
         return 0
-    if len(arr) == 2 and arr[0] < arr[1]:
+    if arr[0] < arr[1]:
         return 0
-    if arr[len(arr) - 1] < arr[len(arr) - 2]:
+    if arr[-1] < arr[-2]:
         return len(arr) - 1
     
     #二分查找, 边界不用考虑了
     beg, end = 1, len(arr) - 2
     while beg <= end:
         mid = (beg + end) // 2
-        #如果左边有递减趋势则在左边找
+        #那一边有递减趋势往那边走
         if arr[mid] > arr[mid - 1]:
             end = mid - 1
         elif arr[mid] > arr[mid + 1]:
@@ -35,4 +35,6 @@ def getLessIndex(arr):
     return -1
 
 arr = [2, 9, 10, 4, 2, 1, 11, 14, 8, 25]
-print(getLessIndex(arr))
+#arr = [4, 2, 1, 0, 5]
+re = getLessIndex(arr)
+print(re, arr[re])

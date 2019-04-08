@@ -19,16 +19,16 @@ def ReplaceBlank(arr):
         #替换成 %20
         if arr[fast] == ' ':
             arr[slow] = '0'
-            slow = slow - 1
+            slow -= 1
             arr[slow] = '2'
-            slow = slow - 1
+            slow -= 1
             arr[slow] = '%'
         else: #直接拷贝
             arr[slow] = arr[fast]
 
         #调整有标
-        slow = slow - 1
-        fast = fast - 1
+        slow -= 1
+        fast -= 1
     arr = arr[slow + 1:]
     return arr
 arr = list("we are happy       ")

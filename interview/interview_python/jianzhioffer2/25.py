@@ -10,8 +10,8 @@ def MergeSortList(l1, l2):
     # 正向排序
     cur = None
     if l1.value < l2.value:
-        cur = l1
-        cur.next = MergeSortList(l1.next, l2)
+        cur = l1 #cur串联l1节点
+        cur.next = MergeSortList(l1.next, l2) #串联下一个节点
     else:
         cur = l2
         cur.next = MergeSortList(l1, l2.next)

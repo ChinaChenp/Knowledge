@@ -33,11 +33,10 @@ def ConvertTree2List(t):
     convert(t, preNode)
 
     #t 在中间，升序需要从左边去查找
-    head = preNode
-    while head and head.left != None:
-        print('1111111', head.value)
-        t = t.left
-    return head
+    cur = t.left
+    while cur != None:
+        cur = cur.left
+    return cur
 
 t = Node(10)
 t.left = Node(6)

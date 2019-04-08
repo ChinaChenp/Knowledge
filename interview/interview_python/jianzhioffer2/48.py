@@ -10,7 +10,7 @@ def MaxSubStrLenght(arr):
         tmp_index = map_index[ord(arr[i]) - ord('0')]
         if tmp_index > last_index:
             max_len = max(max_len, i - tmp_index)
-            # 更新最新游标为上一次下一个值
+            # 更新最新游标为上一次出现的下一个位置
             last_index = tmp_index + 1 
 
         # 存储最新字符最新的位置

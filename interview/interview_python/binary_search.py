@@ -3,7 +3,8 @@
 def binary_search(list, key):
     low, high = 0, len(list) - 1
 
-    while low < high:
+    # 必须要用等于，否则两个边界查不到
+    while low <= high:
         mid = (low + high) // 2
         guess = list[mid]
 
@@ -16,6 +17,12 @@ def binary_search(list, key):
     return False
 
 list = [1, 3, 6, 7, 9, 10, 12, 15]
+
+re = binary_search(list, 1)
+print(re)
+
+re = binary_search(list, 15)
+print(re)
 
 re = binary_search(list, 3)
 print(re)
