@@ -8,7 +8,6 @@ func BenchmarkFunc1(t *testing.B) {
 	}
 }
 
-
 func BenchmarkFunc2(t *testing.B) {
 	for i := 0; i < t.N; i++ {
 		Func2()

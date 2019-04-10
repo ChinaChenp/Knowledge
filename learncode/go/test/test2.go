@@ -10,8 +10,8 @@ type A struct {
 }
 
 type B struct {
-	c int
-	d int
+	c    int
+	d    int
 	info *A
 }
 

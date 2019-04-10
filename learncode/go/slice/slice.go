@@ -48,7 +48,7 @@ func main() {
 
 	re := returnSlice()
 	fmt.Printf("----> %v, len %v, cap %v\n", re, len(re), cap(re))
-	re1 := re[0:2 : len(re)+2]
+	re1 := re[0 : 2 : len(re)+2]
 	fmt.Printf("----> %v, len %v, cap %v\n", re1, len(re1), cap(re1))
 
 	strslice1 := []string{"1", "2", "3", "4"}

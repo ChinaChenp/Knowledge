@@ -92,16 +92,16 @@ func main() {
 	//fmt.Println(ad, age)
 
 	// map sort
-	var mp2 = map[int]string {
-		1:"11",
-		2:"22",
-		8:"88",
-		5:"55",
-		3:"11",
-		4:"22",
-		11:"111",
-		9:"99",
-		6:"66",
+	var mp2 = map[int]string{
+		1:  "11",
+		2:  "22",
+		8:  "88",
+		5:  "55",
+		3:  "11",
+		4:  "22",
+		11: "111",
+		9:  "99",
+		6:  "66",
 	}
 	for k, v := range mp2 {
 		fmt.Println(k, v)

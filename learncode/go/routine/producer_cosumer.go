@@ -21,7 +21,6 @@ func consumer(ch chan int) {
 	}
 }
 
-
 func pro_cosumer(size int) {
 	ch := make(chan int, size)
 

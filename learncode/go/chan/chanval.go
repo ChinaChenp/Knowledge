@@ -33,7 +33,7 @@ func main() {
 
 	go func() {
 		countMap := map[string]Counter{
-			"count": Counter{},
+			"count": {},
 		}
 		//countMap := map[string]int{
 		//	"count": 1,

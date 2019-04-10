@@ -11,7 +11,7 @@ func timeStamp2Str(s int) string {
 }
 
 func NextDaySecondsAtHour(hour int) int {
-	yesTime := time.Now().AddDate(0,0,+1)
+	yesTime := time.Now().AddDate(0, 0, +1)
 	return int(yesTime.Unix())
 }
 
@@ -29,9 +29,9 @@ func GetNextTodayBegin() int64 {
 	return re.Unix()
 }
 
-func main()  {
+func main() {
 	now := time.Now()
-	nowDay := now.Unix()/86400*86400
+	nowDay := now.Unix() / 86400 * 86400
 
 	t, _ := time.Parse("2006-01-02", time.Now().Format("2006-01-02"))
 	timeNumber := t.Unix()

@@ -27,7 +27,7 @@ func main() {
 
 	// case 4, dst长度长于src则只拷贝前面一部分
 	da = make([]int, 15) // 默认是0
-	da[10], da[11], da[len(da) - 1] = -1, -2, -10
+	da[10], da[11], da[len(da)-1] = -1, -2, -10
 	cc = copy(da, sa)
 	fmt.Printf("copy to da(len=%d)\tcopied=%d\t%v\n", len(da), cc, da)
 }

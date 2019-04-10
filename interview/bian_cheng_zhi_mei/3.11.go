@@ -8,9 +8,9 @@ import (
 // todo : 字典序二分查找
 func strBinarySearch(str []byte, b byte) int {
 	length := len(str)
-	beg, end := 0, length - 1
+	beg, end := 0, length-1
 	for beg <= end {
-		mid := (end + beg)/2
+		mid := (end + beg) / 2
 		if b == str[mid] {
 			return mid
 		} else if b > str[mid] {

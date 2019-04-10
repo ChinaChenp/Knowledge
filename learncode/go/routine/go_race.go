@@ -7,7 +7,7 @@ import (
 
 var (
 	counter = 0
-	wg sync.WaitGroup
+	wg      sync.WaitGroup
 )
 
 func incCounter() {
@@ -20,7 +20,6 @@ func readCounter() int {
 	defer wg.Done()
 	return counter
 }
-
 
 func main() {
 	counter := 10

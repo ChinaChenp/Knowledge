@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main ()  {
+func main() {
 	l := []int64{}
 	if l == nil {
 		fmt.Println("nil", len(l))

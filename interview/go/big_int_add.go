@@ -1,15 +1,15 @@
 package main
 
 import (
-	"strings"
 	"fmt"
+	"strings"
 )
 
 func addBigNum(a, b string) string {
 	if len(a) <= len(b) {
 		a = strings.Repeat("0", len(b)-len(a)) + a
 	} else {
-		b = strings.Repeat("0", len(a) - len(b)) + b
+		b = strings.Repeat("0", len(a)-len(b)) + b
 	}
 
 	needAdd := false
@@ -30,7 +30,7 @@ func addBigNum(a, b string) string {
 			needAdd = false
 		}
 
-		out = string(sum + '0') + out
+		out = string(sum+'0') + out
 	}
 
 	if needAdd {

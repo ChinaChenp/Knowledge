@@ -7,7 +7,7 @@ func RightShift(arr []byte, n int) string {
 	length := len(arr)
 	n %= length
 	for n > 0 {
-		tmp := arr[length - 1]
+		tmp := arr[length-1]
 		for j := length - 1; j > 0; j-- {
 			arr[j] = arr[j-1]
 		}

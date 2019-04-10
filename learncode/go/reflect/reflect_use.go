@@ -331,8 +331,8 @@ func shallowCopy(dst, src interface{}) error {
 	fmt.Println(srcType.String(), dstType.String())
 
 	if srcType.AssignableTo(dstType) {
-		srcValue  := reflect.Indirect(reflect.ValueOf(src))
-		dstValue  := reflect.Indirect(reflect.ValueOf(dst))
+		srcValue := reflect.Indirect(reflect.ValueOf(src))
+		dstValue := reflect.Indirect(reflect.ValueOf(dst))
 
 		if !dstValue.CanAddr() {
 			return fmt.Errorf("destination %+v is unaddressable", dstValue.Interface())
@@ -347,7 +347,7 @@ func shallowCopy(dst, src interface{}) error {
 type (
 	Rel struct {
 		Int int
-		Str string  `deepcopier:"skip"`
+		Str string `deepcopier:"skip"`
 	}
 
 	Rel1 struct {
@@ -557,4 +557,3 @@ func copyRecursive(original, cpy reflect.Value) {
 		cpy.Set(original)
 	}
 }
-

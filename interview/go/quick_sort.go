@@ -1,6 +1,5 @@
 package main
 
-
 func quickSort(arr []int, beg, end int) {
 	left, right := beg, end
 	base := arr[(beg+end)/2]

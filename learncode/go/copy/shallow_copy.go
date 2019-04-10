@@ -1,13 +1,13 @@
 package main
 
 import (
-	"unsafe"
 	"fmt"
+	"unsafe"
 )
 
 type Info struct {
 	List []int
-	Kv map[int]string
+	Kv   map[int]string
 }
 
 type DetailFrom struct {
@@ -28,11 +28,11 @@ func convert(from *DetailFrom) *DetailTo {
 
 func main() {
 	from := &DetailFrom{
-		A : "chenp1",
-		B : 50,
+		A: "chenp1",
+		B: 50,
 		C: &Info{
 			List: []int{1, 2, 3, 4, 5},
-			Kv: map[int]string{1:"11", 2:"22", 3:"33"},
+			Kv:   map[int]string{1: "11", 2: "22", 3: "33"},
 		},
 	}
 

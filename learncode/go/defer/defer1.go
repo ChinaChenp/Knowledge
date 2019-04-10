@@ -15,7 +15,7 @@ func print1(a int) {
 	fmt.Println(a)
 }
 
-func  main() {
+func main() {
 	a := 5
 	d := &info{2, "chenping"}
 

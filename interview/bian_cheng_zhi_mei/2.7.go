@@ -11,7 +11,6 @@ func gcd(x, y int) int {
 	return gcd(y, x%y)
 }
 
-
 func main() {
 	re := gcd(42, 30)
 	fmt.Println(re)

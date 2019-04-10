@@ -9,7 +9,7 @@ const TIME_LAYOUT = "2006-01-02 15:04:05"
 
 func parseWithLocation(name string) (time.Time, error) {
 	locationName := name
-	l, err := time.LoadLocation(locationName);
+	l, err := time.LoadLocation(locationName)
 	if err != nil {
 		println(err.Error())
 		return time.Time{}, err
@@ -46,6 +46,7 @@ func timeIn(name string) time.Time {
 }
 
 var StringTimeFormat = "2006-01-02 15:04:05"
+
 func ConvertTimeString2Timestamp(timeStr string, Locale *time.Location) (int64, error) {
 	t, err := time.ParseInLocation(StringTimeFormat, timeStr, Locale)
 	if err != nil {

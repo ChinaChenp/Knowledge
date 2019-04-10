@@ -11,20 +11,20 @@ type Info struct {
 }
 
 type From struct {
-	Name string
+	Name   string
 	Detail *Info
 }
 
 type To struct {
-	Name string
+	Name   string
 	Detail *Info
 }
 
 func copyfrom() *To {
 	age := 29
 	src := &From{
-		Name : "chenp",
-		Detail : &Info{
+		Name: "chenp",
+		Detail: &Info{
 			Age: &age,
 			Num: age,
 		},
@@ -36,7 +36,7 @@ func copyfrom() *To {
 func main() {
 	var a = 15
 	for i := 0; i < 1; i++ {
-		var age= i
+		var age = i
 		var from From
 		from.Name = "chenp" + fmt.Sprintf("_%d", i)
 		from.Detail = &Info{&age, age}

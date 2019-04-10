@@ -5,12 +5,12 @@ import (
 	"sync"
 )
 
-const MaxBatchCount  =  3
+const MaxBatchCount = 3
 
 func getOdInfoStatusImpl(grid string, ids []int64) ([]int64, error) {
 	out := make([]int64, 0)
 	for _, v := range ids {
-		out = append(out, v + 100)
+		out = append(out, v+100)
 	}
 	return out, nil
 }
@@ -21,9 +21,9 @@ func GetOdInfoStatus(grid string, ids []int64) {
 	//	return
 	//}
 
-	maxRange := total/MaxBatchCount
-	if total % MaxBatchCount != 0 {
-		maxRange = total / MaxBatchCount + 1
+	maxRange := total / MaxBatchCount
+	if total%MaxBatchCount != 0 {
+		maxRange = total/MaxBatchCount + 1
 	}
 
 	var wg sync.WaitGroup
@@ -31,7 +31,7 @@ func GetOdInfoStatus(grid string, ids []int64) {
 	wg.Add(maxRange)
 	for i := 0; i < maxRange; i++ {
 		max := total
-		if (i + 1) * MaxBatchCount < total {
+		if (i+1)*MaxBatchCount < total {
 			max = (i + 1) * MaxBatchCount
 		}
 
@@ -60,7 +60,7 @@ func GetOdInfoStatus(grid string, ids []int64) {
 
 func main() {
 	in := make([]int64, 0)
-	for i := 0 ;i < 12; i++ {
+	for i := 0; i < 12; i++ {
 		in = append(in, int64(i))
 	}
 

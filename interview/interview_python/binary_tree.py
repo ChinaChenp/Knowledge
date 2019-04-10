@@ -58,7 +58,7 @@ def PreOrderTraverse1(t):
     if t == None:
         return
 
-    stack = list()
+    stack = []
     cur = t
     while cur != None or len(stack) != 0:
         while cur != None:
@@ -66,7 +66,7 @@ def PreOrderTraverse1(t):
             stack.append(cur)
             cur = cur.left
         
-        if len(stack) != None:
+        if len(stack) != 0:
             cur = stack.pop()
             cur = cur.right
 

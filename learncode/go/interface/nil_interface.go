@@ -4,7 +4,7 @@ import "fmt"
 
 type Infoer interface {
 	Print()
-	Talk()(str string)
+	Talk() (str string)
 }
 
 func main() {

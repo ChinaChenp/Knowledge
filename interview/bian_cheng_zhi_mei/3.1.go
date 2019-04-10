@@ -9,7 +9,7 @@ import (
 
 func rightShift(str []byte) string {
 	length := len(str)
-	tmp := str[length - 1]
+	tmp := str[length-1]
 	for j := length - 1; j > 0; j-- {
 		str[j] = str[j-1]
 	}

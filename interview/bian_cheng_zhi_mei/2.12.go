@@ -1,14 +1,14 @@
 package main
 
 import (
-	"sort"
 	"fmt"
+	"sort"
 )
 
 // todo : 快速寻找满足条件的两个数，无序数组
 func FindNumbersWithSum(arr []int, sum int) (int, int) {
 	sort.Ints(arr)
-	beg, end := 0, len(arr) - 1
+	beg, end := 0, len(arr)-1
 	for beg < end {
 		curSum := arr[beg] + arr[end]
 		if curSum == sum {

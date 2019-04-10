@@ -18,7 +18,7 @@ func FindMaxMin(arr []int) (int, int) {
 }
 
 func main() {
-	arr := []int {3, 6, 7, 9, 6, 5, 2, 3, 10, 2}
+	arr := []int{3, 6, 7, 9, 6, 5, 2, 3, 10, 2}
 	max, min := FindMaxMin(arr)
 	fmt.Println(max, min)
 }
