@@ -47,9 +47,11 @@ def EntryNodeOfLoop(head):
     if meeting_node == None:
         return None
     print(meeting_node.value)
+
     #计算环中节点个数
     num = CountNode(meeting_node)
     print(num)
+
     #快慢指针
     fast = slow = head
     while num > 0:

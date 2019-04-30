@@ -17,7 +17,7 @@ def InViewNextNode(t, key):
             cur = cur.left
         next_node = cur
     
-    # 向上查找第一个父节点的左节点
+    # 向上查找第一个父节点的右节点包含此节点
     elif t.parent != None:
         cur, parent_node = t, t.parent 
         while parent_node != None and parent_node.right != t:

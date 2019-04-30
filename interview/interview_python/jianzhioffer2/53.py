@@ -53,7 +53,10 @@ def SortCommonNum(arr, key):
         return -1
 
 arr = [1, 2, 3, 3, 3, 3, 4, 5]
-#print(FindFirstK(arr, 3))
-#print(FindLastK(arr, 3))
-
 print(SortCommonNum(arr, 3))
+
+arr = [3, 3, 3, 3, 3, 4, 5, 5, 6]
+print(SortCommonNum(arr, 3))
+
+arr = [1, 2, 3, 3, 3, 3, 4, 5, 5, 5]
+print(SortCommonNum(arr, 5))

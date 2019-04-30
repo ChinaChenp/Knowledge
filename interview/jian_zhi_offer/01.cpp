@@ -29,7 +29,7 @@ String & String::operator=(const String & th) {
 }
 #else
 String & String::operator=(const String & th) {
-    if (this != &th ){
+    if (this != &th){
         String tmp = String(th);
         std::swap(tmp.str, str);
     }

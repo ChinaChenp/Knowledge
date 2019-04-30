@@ -8,16 +8,15 @@ class Node:
 def list_reverse(head):
     if head is None or head.next is None:
         return head
-    p, q = head, head.next #保存头指针节点
-
+    p, q = head, head.next
     head.next = None
-    while q :
-        tmp = q.next
-        q.next = p
-        p = q
-        q = tmp
-    head = p
-    return head
+    while q:
+        tmp = q.next 
+        q.next = p  # 调换指针方向
+        p = q       # 移动慢指针到下一个节点
+        q = tmp     # 移动快指针到下一个节点
+
+    return p
 
 head = Node(1)
 head.next = Node(2)

@@ -12,7 +12,7 @@ def Sqrt(n, digit):
         precision = precision / 10
 
     beg, end = 1, n
-    while abs(beg - end) > precision: #beg和end差值大于最小精度差就不可能继续划分 
+    while abs(beg - end) > precision: #beg和end差值小于最小精度差就不可能继续划分 
         mid = (beg + end) / 2
         if mid*mid > n:
             end = mid

@@ -80,7 +80,6 @@ def InOrderTraverse(t):
     print(t.value, end=', ')
     InOrderTraverse(t.right)
 
-
 print('中序遍历: ')
 InOrderTraverse(t)
 print()
@@ -114,6 +113,7 @@ def LevelTraverse(t):
             l.append(node.right)
         #print('------------', l)
     return
+
 print('分层遍历(从上到下):')
 LevelTraverse(t)
 print()
@@ -159,8 +159,10 @@ def GetNodeNumKthLevel(t, k):
     right = GetNodeNumKthLevel(t.right, k - 1)
     #print('-----------', left, right)
     return left + right
-re = GetNodeNumKthLevel(t, 3)
-print('第k（3）层数据个数：{}'.format(re))
+
+n = 3
+re = GetNodeNumKthLevel(t, n)
+print('第{}层数据个数：{}'.format(n, re))
 
 #叶子节点的个数
 def GetLeafNodeNum(t):
@@ -176,7 +178,7 @@ def GetLeafNodeNum(t):
 re = GetLeafNodeNum(t)
 print('叶子节点的个数：{}'.format(re))
 
-# 判断两棵二叉树是否结构相同
+# 判断两棵二叉树是否(结构)相同,没有判断只
 def StructureCmp(t1, t2):
     if t1 == None and t2 == None:
         return True
@@ -239,39 +241,73 @@ def LeftView(t):
     cur_level, next_level = 1, 0  #记录当前层和下一层个数
     while len(l) != 0:
         node = l.pop(0)
+        count += 1
         if node.left != None:
             l.append(node.left)
             next_level += 1
         if node.right != None:
             l.append(node.right)
             next_level += 1
-        if count == 0:
-            print(node.value, end=', ')
-        count += 1
         if count == cur_level:
-            #清零计数器 
+            #下一层个数
             cur_level = next_level
+            #计数器清零
             count = next_level = 0
+            #打印右边最后一个节点
+            print(node.value, end=', ')
     return
 
 # 递归的方式
 # 因为每层只打印一个节点，我们可以使用一个记录每层节点的队列，同时把层数作为一个参数，当打印到某层时，
 # 如果层数刚好等于队列的长度，就说明该节点就是该层遇到的第一个节点，将它加入队列并向子树递归。
-def LeftView1(t, level, slice):
-    #print(level, slice)
+def LeftView1(t, level, out):
     if t == None:
         return None
-    if level == len(slice):
-        slice.append(t.value)
-    LeftView1(t.left, level + 1, slice)
-    LeftView1(t.right, level + 1, slice)
+    if level == len(out):
+        out.append(t.value)
+    LeftView1(t.left, level + 1, out)
+    LeftView1(t.right, level + 1, out)
 
 print('右视图遍历:')
 LeftView(t)
 print()
+
+print('左视图遍历:')
 re = []
 LeftView1(t, 0, re)
 print(re)
+print()
+
+# 二叉树的宽度
+# 宽度定义：二叉树各层节点个数的最大值
+def Weith(t):
+    if t == None:
+        return 0
+    
+    qu = []
+    qu.append(t)
+
+    count = 0 #计数器
+    max_count = 0 #最大宽度
+    cur_count, next_count = 1, 0
+    while len(qu) != 0:
+        v = qu.pop(0)
+        count += 1
+
+        if v.left != None:
+            qu.append(v.left)
+            next_count += 1
+        if v.right != None:
+            qu.append(v.right)
+            next_count += 1
+        if count == cur_count: # 下一层, 清零计数器，更新最大宽度
+            max_count = max(max_count, cur_count)
+            cur_count = next_count
+            next_count = count = 0
+    return max_count
+
+re = Weith(t)
+print('二叉树的宽度:{}'.format(re))
 print()
 
 # 二叉树节点间最大距离
@@ -305,11 +341,10 @@ def MaxDistance(t):
     rmax = MaxDistance(t.right)
 
     #case3 一个在根节点左边、一个在右边
-    lhigh = MaxHigh(t.left)
-    rhigh = MaxHigh(t.right)
-    #print(lmax, rmax, lhigh, rhigh)
+    lrmax = MaxHigh(t.left) + MaxHigh(t.right)
+    #print(lmax, rmax, lrmax)
 
-    return max(lmax, rmax, lhigh + rhigh)
+    return max(lmax, rmax, lrmax)
 
 re = MaxDistance(t)
 print(t)
@@ -400,3 +435,32 @@ subTree.left = Node(1)
 subTree.left.right = Node(12)
 print('----------------', t, subTree)
 print('子树：', IsSubTree(t, subTree))
+
+# 二叉树搜索树第K打的节点
+# 思路：二叉搜索树中序遍历，判断k是否等于1
+def FindKthNode(t, k):
+    if t == None or k <= 0:
+        return None
+    return FindKthNodeCore(t, k)
+    
+def FindKthNodeCore(t, k):
+    target = None
+
+    if t.left != None:
+        target = FindKthNodeCore(t.left, k)
+
+    print(t.value )
+    if target == None:
+        if k == 1: #命中目标
+            target = t
+        k -= 1
+    
+    if target == None and t.right != None:
+        target = FindKthNodeCore(t.right, k)
+    return target
+
+bst_tree = bst(3)
+print(bst_tree)
+n = 5
+re = FindKthNode(bst_tree, n)
+print('二叉搜索树第{}大数: {}'.format(n, re))

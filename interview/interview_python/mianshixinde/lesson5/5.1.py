@@ -1,4 +1,4 @@
-#最大连续乘机子串
+#最大连续乘积子串
 
 def MaxProductSubstring1(arr):
     max_value = arr[0]

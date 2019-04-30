@@ -1,12 +1,12 @@
 // 单例
 
 class Singleton {
-    public:
-        static Singleton *GetInstance() {
-            return m_instance;
-        }
-    private:
-        static Singleton * m_instance;
+public:
+    static Singleton *GetInstance() {
+        return m_instance;
+    }
+private:
+    static Singleton * m_instance;
 };
 
 Singleton *Singleton::m_instance = new Singleton;

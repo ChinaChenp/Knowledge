@@ -7,7 +7,7 @@ def Permutation(arr, index):
     if len(arr) == 0:
         return
     if len(arr) - 1 == index:
-        print(arr)
+        print(''.join(arr))
     for v in range(index, len(arr)):
         arr[v], arr[index] = arr[index], arr[v]
         Permutation(arr, index + 1)

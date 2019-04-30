@@ -11,7 +11,7 @@ def MatchStr(str1, str2):
             i += 1
             j += 1
         else:
-            #i 需要回退回去
+            #i 需要回退到上一次开始匹配的下个位置
             i = i - j + 1
             j = 0
     if j == len2:

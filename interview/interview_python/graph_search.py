@@ -23,7 +23,6 @@ def graph_search(mp):
                 searched[person] = ""
     return False
 
-
 graph = {}
 graph["you"] = ["alice", "bob", "claire"]
 graph["bob"] = ["anuj", "peggy"]

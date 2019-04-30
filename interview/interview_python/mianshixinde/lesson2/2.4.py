@@ -11,16 +11,16 @@
 def MaxSubArray(arr):
     if len(arr) == 0:
         return 0
-    max_sum, curr_sum = 0, 0
+    max_sum, cur_sum = 0, 0
     for i in range(0, len(arr)):
         #新加入的值只要是正向影响我们就加入进去
-        if curr_sum + arr[i] >= arr[i]:
-            curr_sum += arr[i]
+        if cur_sum + arr[i] >= arr[i]:
+            cur_sum += arr[i]
         else:
-            curr_sum = arr[i]
-        if curr_sum > max_sum:
-            max_sum = curr_sum
-        print(curr_sum, max_sum)
+            cur_sum = arr[i]
+        if cur_sum > max_sum:
+            max_sum = cur_sum
+        #print(cur_sum, max_sum)
     return max_sum
 
 arr=[1, -2, 3, 10, -4, 7, 2, -5, 90]
