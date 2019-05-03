@@ -1,10 +1,6 @@
 #两个链表的第一个公共节点
 #思路：先计算两个链表长度，然后算差值k，长的链表先走k步
-
-class Node:
-    def __init__(self, value, next=None):
-        self.value = value
-        self.next = next
+import list_common as List
 
 def GetLength(l):
     if l == None:
@@ -41,8 +37,8 @@ def FindCommonNode(l1, l2):
     return None
 
 
-a, b, c, d, e, f, g, h = Node(1), Node(2), Node(
-    3), Node(4), Node(5), Node(6), Node(7), Node(8)
+a, b, c, d, e, f, g, h = List.Node(1), List.Node(2), List.Node(
+    3), List.Node(4), List.Node(5), List.Node(6), List.Node(7), List.Node(8)
 l2 = a
 l2.next = c
 l2.next.next = e
