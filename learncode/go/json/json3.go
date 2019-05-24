@@ -27,18 +27,30 @@ func JsonDecoder(b []byte, out interface{}) error {
 	return nil
 }
 
+func JsonEncoder(in interface{}) ([]byte, error) {
+	var out bytes.Buffer
+	encoder := json.NewEncoder(&out)
+	err := encoder.Encode(in)
+	if err != nil {
+		return nil, err
+	}
+	return out.Bytes(), nil
+}
+
 func main() {
-	data := Data{B: 1152921610250748151, C: 1152921610250748151}
-	info := Info{A: 1, Data: data}
+	data := Data{B: 5764607589339758604, C: 1152921610250748151}
+	var in interface{}
+	in = data
 
-	b, _ := json.Marshal(info)
+	b, _ := json.Marshal(in)
 
-	out := Info{}
-	err := JsonDecoder(b, &out)
+	out := Data{}
+	//err := JsonDecoder(b, &out)
+	err := json.Unmarshal(b, &out)
 	if err != nil {
 		return
 	}
 
-	fmt.Println(out)
+	fmt.Println(out, out.B)
 
 }
