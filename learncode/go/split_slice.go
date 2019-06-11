@@ -27,13 +27,14 @@ func splitSlice(all []int64, maxSize int) [][]int64 {
 }
 
 func print(in [][]int64) {
+	fmt.Println(len(in))
 	for i := 0; i < len(in); i++ {
 		fmt.Println(in[i])
 	}
 }
 
 func main() {
-	in := []int64{2, 5, 7, 9, 1, 2, 4, 3}
+	in := []int64{}
 	v := splitSlice(in, 10)
 
 	print(v)
