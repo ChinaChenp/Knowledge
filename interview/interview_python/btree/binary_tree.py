@@ -464,3 +464,35 @@ print(bst_tree)
 n = 5
 re = FindKthNode(bst_tree, n)
 print('二叉搜索树第{}大数: {}'.format(n, re))
+
+# 合并二叉树
+# https://leetcode-cn.com/problems/merge-two-binary-trees/comments/
+# 输入: 
+# 	Tree 1                     Tree 2                  
+#           1                         2                             
+#          / \                       / \                            
+#         3   2                     1   3                        
+#        /                           \   \                      
+#       5                             4   7                  
+# 输出: 
+# 合并后的树:
+# 	     3
+# 	    / \
+# 	   4   5
+# 	  / \   \ 
+# 	 5   4   7
+# 注意: 合并必须从两个树的根节点开始。
+def mergeTree(t1, t2):
+    if t1 == None:
+        return t2
+    if t2 == None:
+        return t1
+
+    t1.value += t2.value
+    t1.left = mergeTree(t1.left, t2.left)
+    t1.right = mergeTree(t1.right, t2.right)
+    return t1
+
+t1, t2 = bst(3), bst(2)
+print(t1, t2)
+print(mergeTree(t1, t2))
