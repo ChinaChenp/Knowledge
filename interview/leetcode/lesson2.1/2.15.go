@@ -44,13 +44,13 @@ func trap(arr []int) int {
 
 	// 寻找每个柱子左边最大值
 	for i := 1; i < len(arr); i++ {
-		v := MaxInt(leftMax[i - 1], arr[i])
+		v := MaxInt(leftMax[i-1], arr[i])
 		leftMax[i] = v
 	}
 
 	// 寻找每个柱子右边最大值
 	for j := len(arr) - 1 - 1; j > -1; j-- {
-		v := MaxInt(rightMax[j + 1], arr[j])
+		v := MaxInt(rightMax[j+1], arr[j])
 		rightMax[j] = v
 	}
 

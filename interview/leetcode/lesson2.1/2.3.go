@@ -10,7 +10,7 @@ import "fmt"
 //You are given a target value to search. If found in the array return its index, otherwise return -1. You may assume no duplicate exists in the array.
 
 func searchRotatedArr(arr []int, key int) int {
-	beg, end := 0, len(arr) - 1
+	beg, end := 0, len(arr)-1
 
 	for beg <= end {
 		mid := (beg + end) / 2
@@ -36,7 +36,7 @@ func searchRotatedArr(arr []int, key int) int {
 	return -1
 }
 
-func main()  {
+func main() {
 	arr := []int{4, 5, 6, 7, 0, 1, 2, 3}
 	re := searchRotatedArr(arr, 4)
 	fmt.Println(arr[re])

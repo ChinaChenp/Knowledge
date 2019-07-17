@@ -21,6 +21,8 @@ class DataCenter {
 public:
     DataCenter() {
     }
+
+    // 程序启动的时候由主线程加载完成
     void init() {
         index = 0;
         switchover[index].reset(new Config(inc_val));
@@ -68,8 +70,8 @@ void getVal(std::shared_ptr<DataCenter> ptr) {
 
 void setVal(std::shared_ptr<DataCenter> ptr) {
     while (true) {
-        std::chrono::milliseconds dura(5000);
-        std::this_thread::sleep_for(dura);
+        // std::chrono::milliseconds dura(5000);
+        // std::this_thread::sleep_for(dura);
         ptr->swith();
     }
 }

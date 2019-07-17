@@ -6,9 +6,8 @@ import "fmt"
 // 思路：二分查找左边界和右边界
 // 同7.1 思路相同，相当于std::lower_bound()
 
-
 func LeftK(arr []int, key int) int {
-	beg, end := 0, len(arr) - 1
+	beg, end := 0, len(arr)-1
 
 	mid := (end + beg) / 2
 	for beg <= end {
@@ -18,7 +17,7 @@ func LeftK(arr []int, key int) int {
 		} else if arr[mid] < key {
 			beg = mid + 1
 		} else { // 相等
-			if mid - 1 >= 0 && arr[mid-1] == arr[mid] {
+			if mid-1 >= 0 && arr[mid-1] == arr[mid] {
 				end = mid - 1
 			} else {
 				return mid
@@ -27,7 +26,6 @@ func LeftK(arr []int, key int) int {
 	}
 	return mid
 }
-
 
 func main() {
 	arr := []int{5, 7, 7, 8, 8, 10, 13}

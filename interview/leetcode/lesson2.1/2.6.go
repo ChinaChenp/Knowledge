@@ -7,7 +7,6 @@ import "fmt"
 //给定未排序的整数数组，找到最长连续元素序列的长度。
 //例如，给定[100,4,2,1,3,2]，最长的连续元素序列是[1,2,3,4]。 返回它的长度：4。你的算法应该以O（n）复杂度运行。
 
-
 // 思路
 // 用一个map[int]bool 记录每个元素的使用情况，对每个元素以该元素为中心，往左右两边扩张，直到不连续为止
 func longestConsecutive(arr []int) int {
@@ -25,7 +24,7 @@ func longestConsecutive(arr []int) int {
 		used[v] = true
 
 		// 元素自增查找
-		for j := v + 1; ;j++ {
+		for j := v + 1; ; j++ {
 			if _, ok := used[j]; ok {
 				used[j] = true
 				length += 1

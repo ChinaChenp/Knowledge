@@ -8,7 +8,7 @@ import (
 func main() {
 
 	people := []struct {
-		Age  int
+		Age   int
 		Score int64
 	}{
 		{25, 10},
@@ -41,4 +41,3 @@ func main() {
 	})
 	fmt.Println("By name:", people)
 }
-

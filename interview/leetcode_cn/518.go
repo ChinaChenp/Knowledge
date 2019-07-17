@@ -12,7 +12,7 @@ func findUnsortedSubarray(arr []int) int {
 
 	sort.Ints(sortArr)
 
-	beg, end := 0, len(arr) - 1
+	beg, end := 0, len(arr)-1
 	for beg < end {
 		if arr[beg] == sortArr[beg] {
 			beg += 1

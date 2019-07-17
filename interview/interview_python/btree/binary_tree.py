@@ -178,7 +178,7 @@ def GetLeafNodeNum(t):
 re = GetLeafNodeNum(t)
 print('叶子节点的个数：{}'.format(re))
 
-# 判断两棵二叉树是否(结构)相同,没有判断只
+# 判断两棵二叉树是否(结构)相同,不需要判断值
 def StructureCmp(t1, t2):
     if t1 == None and t2 == None:
         return True

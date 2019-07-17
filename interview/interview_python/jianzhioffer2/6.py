@@ -9,9 +9,7 @@ def ReverseList(head):
     if head == None or head.next == None:
         return
 
-    p = head
-    q = head.next
-
+    p, q = head, head.next
     head.next = None
     while q:
         tmp = q.next

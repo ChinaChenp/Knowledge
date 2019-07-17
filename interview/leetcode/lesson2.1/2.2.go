@@ -18,7 +18,7 @@ func removeDuplicates2(arr []int) int {
 
 	index := duplicates
 	for i := duplicates; i < len(arr); i++ {
-		if arr[index - duplicates] != arr[i] {
+		if arr[index-duplicates] != arr[i] {
 			arr[index] = arr[i]
 			index += 1
 		}

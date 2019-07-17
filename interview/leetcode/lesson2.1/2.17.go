@@ -26,7 +26,7 @@ func addOne(arr []int) []int {
 func addPlus(arr []int, add int) []int {
 	c := add
 	for i := len(arr) - 1; i >= 0; i-- {
-		if arr[i] + c >= 10 { // 需要进位
+		if arr[i]+c >= 10 { // 需要进位
 			arr[i] = (arr[i] + c) % 10
 			c = 1 // 肯定是1
 		} else {

@@ -16,7 +16,7 @@ func rotateImage(arr [][]int) [][]int {
 
 	// 沿对角线翻转
 	for i := 0; i < n; i++ {
-		for j := 0; j < n - i; j++ { // 只循环到对角线位置
+		for j := 0; j < n-i; j++ { // 只循环到对角线位置
 			//fmt.Println(i, j)
 			swap(&arr[i][j], &arr[n-1-j][n-1-i])
 		}
@@ -32,7 +32,7 @@ func rotateImage(arr [][]int) [][]int {
 	return arr
 }
 
-func main()  {
+func main() {
 	arr := [][]int{
 		{1, 2, 3},
 		{3, 4, 6},

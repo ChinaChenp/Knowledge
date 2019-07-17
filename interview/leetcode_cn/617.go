@@ -10,10 +10,11 @@ package main
  */
 
 type TreeNode struct {
-	Val int
-	Left *TreeNode
+	Val   int
+	Left  *TreeNode
 	Right *TreeNode
 }
+
 func mergeTrees(t1 *TreeNode, t2 *TreeNode) *TreeNode {
 	if t1 == nil {
 		return t2
@@ -29,6 +30,6 @@ func mergeTrees(t1 *TreeNode, t2 *TreeNode) *TreeNode {
 	return t1
 }
 
-func main()  {
+func main() {
 
 }

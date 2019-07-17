@@ -18,7 +18,7 @@ import "fmt"
 //Input: nums = [2,5,6,0,0,1,2], target = 3
 //Output: false
 func searchRotatedArr1(arr []int, key int) int {
-	beg, end := 0, len(arr) - 1
+	beg, end := 0, len(arr)-1
 
 	for beg <= end {
 		mid := (beg + end) / 2
@@ -51,7 +51,7 @@ func searchRotatedArr1(arr []int, key int) int {
 	return -1
 }
 
-func main()  {
+func main() {
 	//arr := []int{3, 4, 4, 5, 6, 6, 7, 7, 0, 0, 1, 2, 3}
 	//re := searchRotatedArr1(arr, 4)
 	//fmt.Println(arr[re])

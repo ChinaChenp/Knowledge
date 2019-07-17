@@ -5,7 +5,7 @@ import "fmt"
 func splitSlice(all []int64, maxSize int) [][]int64 {
 	n := len(all) / maxSize
 	vecN := n
-	if len(all) % maxSize != 0 {
+	if len(all)%maxSize != 0 {
 		vecN = n + 1
 	}
 

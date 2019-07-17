@@ -18,7 +18,7 @@ import (
 )
 
 func isValid(str string) bool {
-	mappings := map[rune]rune {
+	mappings := map[rune]rune{
 		')': '(',
 		']': '[',
 		'}': '{',
@@ -43,24 +43,3 @@ func main() {
 	str := "{[[]{}]}()(){"
 	fmt.Println(isValid(str))
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

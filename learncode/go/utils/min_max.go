@@ -1,8 +1,8 @@
-package  main
+package main
 
 import "fmt"
 
-func IntMin(a, b int, num... int) int {
+func IntMin(a, b int, num ...int) int {
 	min := a
 	if b < a {
 		min = b

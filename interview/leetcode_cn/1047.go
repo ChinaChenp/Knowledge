@@ -10,10 +10,10 @@ func removeDuplicates(S string) string {
 	stack := make([]byte, 0)
 	stack = append(stack, S[0])
 	for i := 1; i < len(S); i++ {
-		if len(stack) == 0 || S[i] != stack[len(stack) - 1] {
+		if len(stack) == 0 || S[i] != stack[len(stack)-1] {
 			stack = append(stack, S[i])
 		} else {
-			stack = stack[0:len(stack) - 1]
+			stack = stack[0 : len(stack)-1]
 		}
 	}
 

@@ -6,7 +6,7 @@ import "fmt"
 // 思路：二分查找左边界和右边界
 
 func LeftK(arr []int, key int) int {
-	beg, end := 0, len(arr) - 1
+	beg, end := 0, len(arr)-1
 
 	for beg <= end {
 		mid := (end + beg) / 2
@@ -15,7 +15,7 @@ func LeftK(arr []int, key int) int {
 		} else if arr[mid] < key {
 			beg = mid + 1
 		} else { // 相等
-			if mid - 1 >= 0 && arr[mid-1] == arr[mid] {
+			if mid-1 >= 0 && arr[mid-1] == arr[mid] {
 				end = mid - 1
 			} else {
 				return mid
@@ -24,7 +24,6 @@ func LeftK(arr []int, key int) int {
 	}
 	return -1
 }
-
 
 func main() {
 	arr := []int{5, 7, 7, 8, 8, 10, 13}

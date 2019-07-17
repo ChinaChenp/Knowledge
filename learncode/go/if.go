@@ -35,5 +35,5 @@ func main() {
 	fmt.Println(info.A)
 
 	b := 40000
-	fmt.Println(float64(float64(b)/100.0))
+	fmt.Println(float64(float64(b) / 100.0))
 }

@@ -11,11 +11,11 @@ func canThreePartsEqualSum(A []int) bool {
 	}
 
 	avg := sum / 3
-	if sum % 3 != 0 {
+	if sum%3 != 0 {
 		return false
 	}
 
-	beg, end := 0, len(A) - 1
+	beg, end := 0, len(A)-1
 	leftSum, rightSum := 0, 0
 	for beg <= end {
 		if leftSum != avg {
@@ -38,7 +38,7 @@ func canThreePartsEqualSum(A []int) bool {
 }
 
 func main() {
-	arr := []int{0,2,1,-6,6,-7,9,1,2,0,1}
+	arr := []int{0, 2, 1, -6, 6, -7, 9, 1, 2, 0, 1}
 	re := canThreePartsEqualSum(arr)
 	fmt.Println(re)
 }
