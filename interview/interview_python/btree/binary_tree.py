@@ -393,8 +393,7 @@ def lowestCommonAncestorOfBST1(t, n1, n2):
     # 没找到继续往上找
     if left != None:
         return left
-    if right != None:
-        return right
+    return right  #写成
     
 
 re = lowestCommonAncestorOfBST1(t, 8, 1)
@@ -496,3 +495,64 @@ def mergeTree(t1, t2):
 t1, t2 = bst(3), bst(2)
 print(t1, t2)
 print(mergeTree(t1, t2))
+
+# 打印二叉树所有路劲，有点类似路径和
+def allPath(t):
+    if t == None:
+        return 
+    out = []
+    path = ""
+    core(t, path, out)
+    return out
+
+def core(t, path, out):
+    if t == None:
+        return 
+    
+    path += str(t.value)
+    if t.left == None and t.right == None:
+        out.append(path)
+    if t.left != None:
+        core(t.left, path + "->", out)
+    if t.right != None:
+        core(t.right, path + "->", out)
+
+print(t)
+re = allPath(t)
+print('所有路劲是{}'.format(re))
+
+#求二叉树每层的平均值
+def averageOfLevels(t):
+    if t == None:
+        return
+    l = list()
+    l.append(t)
+
+    next_level, cur_level = 0, 1
+    out, path = [], []
+    while len(l) != 0:
+        node = l.pop(0)
+        cur_level -= 1
+        path.append(node.value)
+        if node.left != None:
+            l.append(node.left)
+            next_level += 1
+        if node.right != None:
+            l.append(node.right)
+            next_level += 1
+        if cur_level == 0: #当前层处理完毕
+            sum = 0
+            #print(path)
+            for v in path:
+                sum += v
+            out.append(sum/len(path))
+
+            path = []
+            cur_level = next_level
+            next_level = 0
+            
+    return out
+
+print(t)
+re = averageOfLevels(t)
+print('每一层平均值是{}'.format(re))
