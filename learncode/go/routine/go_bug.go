@@ -6,10 +6,8 @@ import (
 )
 
 func print(index int, li []int) {
-	fmt.Println(index, li)
-	if index+1 != len(li) {
-		//fmt.Println("not equal")
-	}
+	fmt.Printf("index %v, %v\n", index, li)
+	// write li
 }
 
 func main() {
@@ -39,10 +37,10 @@ func main() {
 	wg.Add(len(li))
 	for i := 0; i < len(li); i++ {
 		list := li[i]
-		go func(index int) {
+		go func() {
 			defer wg.Done()
 			print(i, list)
-		}(i)
+		}()
 	}
 	wg.Wait()
 }

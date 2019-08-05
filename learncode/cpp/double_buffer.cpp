@@ -47,7 +47,7 @@ public:
  
     // *) 访问资源, 由前端线程调用
     std::shared_ptr<Config> getConfig() {
-        return switchover[index];
+        return switchover[index.load()];
     }
  
 private:
