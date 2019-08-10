@@ -51,9 +51,9 @@ public:
     }
  
 private:
-    std::atomic<int> index;
+    std::atomic<int> m_index;
     // *) 切换数组
-    std::shared_ptr<Config> switchover[2];
+    std::shared_ptr<Config> m_switchover[2];
 };
 
 void getVal(std::shared_ptr<DataCenter> ptr) {

@@ -1,6 +1,11 @@
 #include <unistd.h>
 #include <sys/epoll.h>
 #include <sys/inotify.h>
+#include <string>
+#include <map>
+#include <thread>
+
+using namespace std;
 
 typedef int (* FILE_WATCHER_FUNC)(std::string & file_name, void* arg);
 
@@ -15,8 +20,8 @@ public:
     FileNotify():is_init_(false){}
     int Init();
     int Trigger();
-    
-    void AddFileWatcher(const std::string & file_name, 
+
+    void AddFileWatcher(const std::string & file_name,
             FILE_WATCHER_FUNC watcher_func, void* arg);
 
     static FileNotify* GetInstance(){
@@ -75,17 +80,17 @@ int FileNotify::Trigger(){
 
 //加入需要监测的文件
 //此处应在框架Init层进行，故不做并发保护
-void FileNotify::AddFileWatcher(const std::string & file_name, 
+void FileNotify::AddFileWatcher(const std::string & file_name,
         FILE_WATCHER_FUNC watcher_func, void* arg){
     Init();
     int fd = inotify_init();
     inotify_add_watch(fd, file_name.c_str(), IN_MODIFY);
-    struct epoll_event ev; 
+    struct epoll_event ev;
     ev.events = EPOLLIN | EPOLLET;
-    ev.data.fd = fd; 
+    ev.data.fd = fd;
     epoll_ctl(epoll_fd_, EPOLL_CTL_ADD, fd, &ev);
 
-    FileWatcher* file_watcher = new FileWatcher();    
+    FileWatcher* file_watcher = new FileWatcher();
     file_watcher->file_name = file_name;
     file_watcher->watcher_func = watcher_func;
     file_watcher->arg = arg;
@@ -93,14 +98,23 @@ void FileNotify::AddFileWatcher(const std::string & file_name,
     return;
 }
 
-void print(std::string & file_name, void* arg) {
+int print(std::string & file_name, void* arg) {
     printf("ok %s\n", file_name.c_str());
 }
 
+void CheckFile() {
+    while(true) {
+  	FileNotify::GetInstance()->Trigger();
+        sleep(1);
+    }
+}
+
 int main() {
-    FileNotify::GetInstance()->AddFileWatcher("./1.txt", print, NULL);
-    FileNotify::GetInstance()->AddFileWatcher("./2.txt", print, NULL);
-    FileNotify::GetInstance()->AddFileWatcher("./3.txt", print, NULL);
+    std::thread t(CheckFile);
+    FileNotify::GetInstance()->AddFileWatcher("./1.txt", print, (void*)NULL);
+    FileNotify::GetInstance()->AddFileWatcher("./2.txt", print, (void*)NULL);
+    FileNotify::GetInstance()->AddFileWatcher("./3.txt", print, (void*)NULL);
 
     sleep(1000);
+    printf("out\n");
 }
