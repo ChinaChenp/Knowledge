@@ -31,4 +31,11 @@ func main() {
 	sort.SliceStable(people, func(i, j int) bool { return people[i].Age < people[j].Age })
 	fmt.Println("By age,name:", people)
 
+
+	arr := []int{0, 1, 0, 1, 0, 1, 0, 1}
+
+	sort.SliceStable(arr, func(i, j int) bool {
+		return arr[i] < arr[j]
+	})
+	fmt.Println(arr)
 }
