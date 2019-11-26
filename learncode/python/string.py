@@ -1,8 +1,8 @@
-message = "Hello Python Crash Course reader!" 
+message = "Hello Python Crash Course reader!"
 print('I told my friend, "Python is my favorite language!"')
 print("\nhello,world")
 
-print (message.title())
+print(message.title())
 print(message.upper())
 print(message.lower())
 
@@ -24,4 +24,3 @@ for i in enumerate(msg1):
 
 for j in range(len(msg1)):
     print(j)
-

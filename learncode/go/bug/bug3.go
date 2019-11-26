@@ -18,6 +18,10 @@ func main() {
 	}
 	for i := 0; i < 10; i++ {
 		go func(i int) {
+			fmt.Println()
+		}
+
+		go func(i int) {
 			fmt.Println("B: ", i)
 			wg.Done()
 		}(i)

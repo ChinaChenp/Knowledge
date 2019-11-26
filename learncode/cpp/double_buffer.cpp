@@ -73,6 +73,7 @@ void setVal(std::shared_ptr<DataCenter> ptr) {
         // std::chrono::milliseconds dura(5000);
         // std::this_thread::sleep_for(dura);
         ptr->swith();
+        ptr->swith();
     }
 }
 
