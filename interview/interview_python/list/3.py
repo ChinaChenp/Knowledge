@@ -1,19 +1,21 @@
+#coding=utf-8
 #链表反转
 
 import list_common as List
 
+#图解方式  https://blog.csdn.net/xungjhj/article/details/76401184
 def list_reverse(head):
     if head == None or head.next == None:
         return head
     
-    q, p = head, head.next 
+    p, q = head, head.next 
     head.next = None
-    while p:
-        tmp = p.next
-        p.next = q
-        q = p
-        p = tmp
-    head = q  # 最后p已经指向none了
+    while q: # 注意从第二个值开始循环
+        tmp = q.next
+        q.next = p
+        p = q
+        q = tmp
+    head = p  # 最后p已经指向none了
     return head
 
 head = List.Node(1)
